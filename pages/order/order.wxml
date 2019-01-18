@@ -1,0 +1,40 @@
+<view class='order'>
+  <view class='top'>
+    <text class='top-left-text'>火车票订单</text>
+    <navigator class='top-right-text' url='/pages/tips/tips'>温馨提示></navigator>
+  </view>
+  <view class='middle'>
+    <view bindtap='redirectto'>
+      <image src='/icon/order_1.png'></image>
+      <text>待支付</text>
+    </view>
+    <view bindtap='redirectto'>
+      <image src='/icon/order_2.png'></image>
+      <text>已支付</text>
+    </view>
+    <view bindtap='redirectto'>
+      <image src='/icon/order_3.png'></image>
+      <text>候补订单</text>
+    </view>
+    <view bindtap='redirectto'>
+      <image src='/icon/order_4.png'></image>
+      <text>本人车票</text>
+    </view>
+  </view>
+
+  <image src='/images/order-img_02.jpg' class='order_img'></image>
+
+  <view class='bottom'>
+    <view bindtap='redirectto'>
+      <image src='/icon/4.png'></image>
+      <text>餐饮·特产</text>
+    </view>
+
+    <view bindtap='redirectto'>
+      <image src='/icon/2.png'></image>
+      <text>保险订单</text>
+    </view>
+
+  </view>
+
+</view>

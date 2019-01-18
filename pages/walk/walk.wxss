@@ -1,0 +1,55 @@
+/* pages/walk/walk.wxss */
+.walk{
+ background: #efeff4;
+}
+
+.bigpicture{
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+.member{
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  color: #999999;
+  margin: 20rpx 0;
+}
+
+.center{
+  margin: 0 auto;
+  width: 700rpx;
+  height: 600rpx;
+  background: white;
+  color: #6e6e6e;
+  font-size: 12px;
+  display: flex;
+}
+
+.top,.bottom{
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  width: 350rpx;
+  height: 300rpx;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.top{
+  border-right: 1px solid #f0f0f0;
+  margin-left: 10rpx;
+}
+
+.four{
+  border-left: 1px solid #f0f0f0;
+}
+
+.one,.two,.three,.four{
+  line-height: 300rpx;
+}
+
+
+.one image, .two image, .three image, .four image{
+  width: 60rpx;
+  height: 50rpx;
+}

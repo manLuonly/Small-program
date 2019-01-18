@@ -1,0 +1,100 @@
+<view class='home'>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='content'>
+      <view class='text'>
+        <view class='hader'>
+          <input class='action' name='beginCity' value='{{begin}}'
+          bindtap='bindBeginCityView'  disabled='disabled' placeholder=""/>
+          <text class='arrow'>←→</text>
+          <input class='over' name='endCity' value='{{ end }}'
+           bindtap='bindEndCityView'   disabled='disabled'  placeholder="" 
+          />
+        </view>
+        <view class='date'>
+          <text class='actiondate'>出发日期</text>
+          <view class='month'>
+           <picker mode="date" name='leaveDate' 
+           class='flex-box-content-pricker' value="{{date}}" start="2019-01-01"                  end="2020-09-01" bindchange="bindDateChange" >
+          <view class='input-city'>{{date}}</view>
+    </picker>
+          </view>
+          <text class='week'>周日</text>
+        </view>
+        <view class='bottom'>
+          <view class='other' bindchange="checkboxChange">
+            <label class='checkbox' wx:for='{{ items }}' wx:key='index'>
+              {{ item.value }}
+              <checkbox checked='{{ item.checked }}'></checkbox>
+            </label>
+          </view>
+          <navigator>
+            <button form-type='submit' class='query'>查询车票</button>
+          </navigator>
+          <view class='history' wx:for='{{ history }}' wx:key='index'>
+            <text class='city'>{{ item.value }}</text>
+          </view>
+          <text class='eliminate' bindtap='delete'>清除历史</text>
+        </view>
+      </view>
+    </view>
+  </form>
+
+  <swiper class='swiper' indicator-dots indicator-color='#efeff4' indicator-active-color='#5497fa' display-multiple-items='5'>
+    <swiper-item class='swiper-item'>
+      <image src='/icon/1.png'></image>
+      <text>正晚点</text>
+    </swiper-item>
+    <swiper-item class='swiper-item'>
+      <image src='/icon/2.png'></image>
+      <text>温馨服务</text>
+    </swiper-item>
+    <swiper-item class='swiper-item'>
+      <image src='/icon/3.png'></image>
+      <text>铁路e卡通</text>
+    </swiper-item>
+    <swiper-item class='swiper-item'>
+      <image src='/icon/4.png'></image>
+      <text>餐饮·特产</text>
+    </swiper-item>
+    <swiper-item class='swiper-item'>
+      <image src='/icon/5.png'></image>
+      <text>中铁手机卡</text>
+    </swiper-item>
+    <swiper-item class='swiper-item'>
+      <image src='/icon/6.png'></image>
+      <text>约车</text>
+    </swiper-item>
+    <swiper-item class='swiper-item'>
+      <image src='/icon/7.png'></image>
+      <text>旅游服务</text>
+    </swiper-item>
+    <swiper-item class='swiper-item'>
+      <image src='/icon/8.png'></image>
+      <text>起售时间</text>
+    </swiper-item>
+    <swiper-item class='swiper-item'>
+      <image src='/icon/9.png'></image>
+      <text>铁路畅行</text>
+    </swiper-item>
+  </swiper>
+
+  <view class='fill'>
+
+  </view>
+
+  <swiper class='swiper_2' autoplay vertical circular>
+    <swiper-item>
+      <text class='inquiry'>资讯</text>
+      <text class='center'>古代旅游达人都去哪里打卡?</text>
+    </swiper-item>
+    <swiper-item>
+      <text class='inquiry'>资讯</text>
+      <text class='center'>我想和你在这打雪仗</text>
+    </swiper-item>
+    <swiper-item>
+      <text class='inquiry'>资讯</text>
+      <text class='center'>这几座与铁路相关的博物馆,铁路迷们一定不要做过哦</text>
+    </swiper-item>
+  </swiper>
+
+</view>

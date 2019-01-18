@@ -1,0 +1,32 @@
+<view class='list'>
+  <view class='line'>
+  </view>
+  <view class='li' wx:for='items' wx:key='index'>
+    <view class='top'>
+    <view class='timeandplace'>
+    <text class='car'>G2928</text>
+
+    <view class='start'>
+      <view class='start_text'>始</view>
+      <view class='start_address'>{{ begin }}</view>
+      <view class='time'>06:43</view>
+    </view>
+
+    <view class='end'>
+     <view class='end_text'>终</view>
+     <view class='end_address'>{{ end }}</view>
+     <view class='time'>12:40</view>
+    </view>
+
+   </view>
+ </view>
+
+  <view class='grade'>
+  <text>商务:无</text>
+  <text>一等座:无</text>
+  <text>二等座:无</text>
+  </view>
+
+  </view>
+  
+</view>

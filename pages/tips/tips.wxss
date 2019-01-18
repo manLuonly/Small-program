@@ -1,0 +1,6 @@
+/* pages/tips/tips.wxss */
+
+image{
+  width: 100%;
+  height: 1200rpx;
+}

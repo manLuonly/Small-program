@@ -1,0 +1,30 @@
+<view class='walk'>
+  <image src='/images/4_02.jpg' class='bigpicture'></image>
+  <text class='member'>您还不是积分会员,成为会员并激活后,方可开始累加积分。</text>
+  <view class='center'>
+    <view class='top'>
+      <view class='one'>
+      <navigator url='/pages/member/member'>
+        <image src='/icon/walk_1.png'></image>
+        会员信息
+      </navigator>
+      </view>
+      <view class='two' bindtap='alert'>
+        <image src='/icon/9.png'></image>
+        我的积分
+      </view>
+
+    </view>
+    <view class='bottom'>
+
+      <view class='three' bindtap='alert'>
+        <image src='/icon/walk_3.png'></image>
+        受让人
+      </view>
+      <view class='four' bindtap='alert'>
+        <image src='/icon/walk_4.png'></image>
+        消费密码
+      </view>
+    </view>
+  </view>
+</view>
