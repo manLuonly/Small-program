@@ -1,1 +1,57 @@
 /* pages/my/my.wxss */
+
+page {
+  background: #efeff4;
+}
+
+.top {
+  margin: 30rpx 0;
+  background: white;
+}
+
+.top view {
+  height: 100rpx;
+  line-height: 70px;
+  border-bottom: 1px solid #ddd;
+  font-size: 13px;
+  margin-left: 30rpx;
+}
+
+.middle {
+  margin: 30rpx 0;
+  background: white;
+}
+
+.middle view {
+  height: 100rpx;
+  line-height: 70px;
+  border-bottom: 1px solid #ddd;
+  font-size: 13px;
+  margin-left: 30rpx;
+}
+
+.only {
+  margin: 30rpx 0;
+  background: white;
+}
+
+.only view {
+  height: 100rpx;
+  line-height: 70px;
+  border-bottom: 1px solid #ddd;
+  font-size: 13px;
+  margin-left: 30rpx;
+}
+
+.bottom {
+  margin: 30rpx 0;
+  background: white;
+}
+
+.bottom view {
+  height: 100rpx;
+  line-height: 70px;
+  border-bottom: 1px solid #ddd;
+  font-size: 13px;
+  margin-left: 30rpx;
+}

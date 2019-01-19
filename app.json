@@ -1,9 +1,10 @@
 {
   "pages": [
+    "pages/register/register",
+    "pages/my/my",
     "pages/home/index",
     "pages/list/list",
     "pages/city/city",
-    "pages/my/my",
     "pages/order/order",
     "pages/order_unfinished/order_unfinished",
     "pages/walk/walk",

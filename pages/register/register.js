@@ -1,4 +1,4 @@
-// pages/my/my.js
+// pages/register/register.js
 Page({
 
   /**
@@ -7,9 +7,10 @@ Page({
   data: {
 
   },
-  login:function() {
-    wx.navigateTo({
-      url: '/pages/register/register'
+  formSubmit: function(e) {
+    console.log('form发生了submit事件，携带数据为：', e.detail.value)
+    wx.redirectTo({
+      url:  '../home/index',
     })
   },
   /**

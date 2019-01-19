@@ -1,0 +1,28 @@
+/* pages/register/register.wxss */
+page{
+  background: #efeff4;
+}
+
+.register{
+}
+
+input{
+  width: 500rpx;
+  height: 80rpx;
+  border-radius: 5px;
+  margin: 30rpx auto;
+  background: white;
+  font-size: 12px;
+  text-align: center;
+}
+
+.login{
+  background: #3b99fc;
+  color: white;
+}
+
+button{
+    border-radius: 5px;
+    margin: 30rpx auto;
+    width: 500rpx;
+}

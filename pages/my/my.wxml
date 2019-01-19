@@ -1,22 +1,51 @@
 <view class='my'>
-  <view>
-  
-  <view>
-  </view>
 
-    <view>
-  </view>
+    <view class='top'>
+      <view bindtap='login'>
+        登录
+      </view>
+      <view>
+        人证核验
+      </view>
+      <view>
+        手机核验
+      </view>
+      <view>
+        我的保险
+      </view>
+      <view>
+        我的餐饮·特产
+      </view>
+    </view>
 
-    <view>
-  </view>
+    <view class='middle'>
+      <view>
+        出行向导
+      </view>
+      <view>
+        温馨服务
+      </view>
+      <view>
+        信息服务
+      </view>
+    </view>
 
-    <view>
-  </view>
+    <view class='only'>
+      <view>
+        旅行休闲
+      </view>
+    </view>
 
-    <view>
-  </view>
+    <view class='bottom'>
+      <view>
+        基础数据更新
+      </view>
+      <view>
+        系统通知
+      </view>
+      <view>
+        关于
+      </view>
+    </view>
 
-  </view>
-  <view>
-  </view>
 </view>

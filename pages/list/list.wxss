@@ -11,7 +11,7 @@ page{
 }
 
 .li{
-  padding: 20prx 0;
+  margin: 20prx 0;
   background: white;
 }
 
