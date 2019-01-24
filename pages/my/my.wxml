@@ -1,8 +1,8 @@
 <view class='my'>
 
     <view class='top'>
-      <view bindtap='login'>
-        登录
+      <view bindtap='login'  value='{{ loginValue }}'>
+        {{ loginValue }}
       </view>
       <view>
         人证核验

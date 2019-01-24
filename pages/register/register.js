@@ -5,12 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    inputValue: ''
   },
-  formSubmit: function(e) {
-    console.log('form发生了submit事件，携带数据为：', e.detail.value)
-    wx.redirectTo({
-      url:  '../home/index',
+  keyinput:function(e){
+    this.setData({
+      inputValue:e.detail.value
+    })
+  },
+  add: function() {
+    if (this.data.inputValue) {
+      wx.switchTab({
+        url:  '/pages/home/index'
+      })
+    }
+    wx.setStorage({
+      key: 'addiphone',
+      data: this.data.inputValue,
     })
   },
   /**

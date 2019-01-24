@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    loginValue: null
   },
   login:function() {
     wx.navigateTo({
@@ -23,7 +23,15 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+      var that = this;
+    wx.getStorage({
+      key:'addiphone',
+      success:(res) => {
+        that.setData({
+          loginValue:res.data
+        })
+      }
+    })
   },
 
   /**
